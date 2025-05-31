@@ -31,7 +31,7 @@ public class Sphere extends Shape {
         System.out.printf("Luas permukaan  : %.2f\n", getSurfaceArea());
         System.out.printf("Massa           : %.2f\n", getMass());
         System.out.printf("Massa dalam kg  : %.2f\n", gramToKilogram((int) getMass()));
-        System.out.printf("Biaya kirim     : Rp %d\n", (int) calculateCost(getMass()));
+        System.out.printf("Biaya kirim     : Rp %d\n", (int) calculateCost(gramToKilogram((int) getMass())));
     }
     
     @Override
